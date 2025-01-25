@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body{
+        background: url(ressources/bg/bgapple.jpg) no-repeat;
+    }</style>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="la"><a href="HTMLelements.html"><img src="ressources/french_flag.png" alt=""></a><a href=""><img src="ressources/english_flag.png" alt=""></a></div>
+
+    <div class="box_nav">
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">HTMLelements</a>
+                </li>
+                <li>
+                    <a href="page3.html">Javascript</a>
+                </li>
+                <li>
+                    <a href="login_page/index2.html">Login</a>
+                </li>
+            </ul>
+            <div id="icons"></div>
+        </nav>
+    </div>
+
+    <div class="html_elements_main_part">
+        <section>
+            <div class="textepart">
+                <h2>Video on a Website</h2>
+                <p>The HTML video tag allows you to directly embed a video into a website without relying on external services. It provides a native solution for displaying videos with features like playback controls, pause, or volume adjustment. By combining this tag with video files in compatible formats (e.g., MP4, WebM, or Ogg), developers can customize the player's appearance and behavior using CSS and JavaScript, providing a smooth user experience integrated into the site's design.</p>
+            </div>
+            <div class="exemplepart" id="n1">
+                <video class="custom-video" controls>
+                    <source src="ressources/rr.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section>
+            <div class="exemplepart cssgrid">
+                <div class="pred"></div>
+                <div class="pgreen"></div>
+                <div class="pyellow"></div>
+                <div class="pblue"></div>
+                <div class="pblack"></div>
+            </div>
+            <div class="textepart">
+                <h2>CSS Grid</h2>
+                <p>CSS Grid Layout is a powerful two-dimensional layout system that allows you to create grids organized in rows and columns. Unlike Flexbox, which primarily manages one dimension at a time (row or column), Grid is designed to control both.</p>
+                <div style="display: flex; flex-direction: row; gap: 14px;">
+                    <button id="change_grid" class="b1">Change Position</button>
+                    <button id="reset" class="b1">Reset</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="textepart">
+                <h2>Tables</h2>
+                <p>HTML tables are used to organize and display data in rows and columns, making it easier to read and compare information. An HTML table is defined using the table tag and consists of several elements: column headers with the th tag, data rows with tr, and cells containing data with td. Thanks to this simple structure, tables allow for clear and structured presentation of information such as reports, schedules, or statistics.</p>
+            </div>
+            <div class="exemplepart" style="display: flex; justify-content: center; align-items: center;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alice</td>
+                            <td>25</td>
+                            <td>Paris</td>
+                        </tr>
+                        <tr>
+                            <td>Bob</td>
+                            <td>30</td>
+                            <td>Lyon</td>
+                        </tr>
+                        <tr>
+                            <td>Mr. Josse</td>
+                            <td>62</td>
+                            <td>Paris</td>
+                        </tr>
+                        <tr>
+                            <td>Bobi</td>
+                            <td>52</td>
+                            <td>Bordeaux</td>
+                        </tr>
+                        <tr>
+                            <td>Patrick</td>
+                            <td>99</td>
+                            <td>NY</td>
+                        </tr>
+                        <tr>
+                            <td>Margot</td>
+                            <td>18</td>
+                            <td>Clamecy</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <div class="exemplepart">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.51608150802!2d2.342490376415497!3d48.84790957133082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671c2b0842b6b%3A0x85a2688c5a2d0790!2sLyc%C3%A9e%20Louis-le-Grand!5e1!3m2!1sen!2sus!4v1733064968914!5m2!1sen!2sus" width="600" height="450" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="textepart">
+                <h2>Embedded Map</h2>
+                <p>It is possible to embed interactive maps into a website, allowing the display of geographic locations, routes, or points of interest in a visual and dynamic way. One of the most popular solutions for this is using APIs like Google Maps or Leaflet, which provide powerful tools to display custom maps. These maps can be embedded directly into the HTML code, with the ability to mark specific locations, add interactive information, and even adjust the map's style to match the site's aesthetics.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="exemplepart flexpart">
+                <div class="fred"></div>
+                <div class="fgreen"></div>
+                <div class="fyellow"></div>
+                <div class="fblue"></div>
+                <div class="fblack"></div>
+            </div>
+            <div class="textepart">
+            </div>
+        </section>
+
+       
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

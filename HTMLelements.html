@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body{
+        background: url(ressources/bg/bgapple.jpg) no-repeat;
+    }</style>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="la"><a href=""><img src="ressources/french_flag.png" alt=""></a><a href="HTMLelements_english.html"><img src="ressources/english_flag.png" alt=""></a></div>
+
+    <div class="box_nav">
+        <nav id="nav" >
+        
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="#">HTMLelements</a>
+                </li>
+                <li>
+                    <a href="page3.html">Javascript</a>
+                </li>
+                <li>
+                    <a href="login_page/index2.html">Connexion</a>
+                </li>
+            </ul>
+            <div id="icons"></div>
+        </nav>
+    </div>
+    <div class="html_elements_main_part">
+        <!-- un tableau, 
+         une vidéo youtube, 
+         un texte avec plein de police de caractère différentes(google), 
+         un css grid modulable(via js),
+         un formulaire (page de login) (fait) -->
+        <section>
+            <div class="textepart">
+                <h2>Vidéo dans un Site</h2>
+                <p>
+                    La balise video en HTML permet d'intégrer directement une vidéo dans un site web sans dépendre de services externes. Elle offre une solution native pour afficher des vidéos, avec des fonctionnalités comme les contrôles de lecture, la mise en pause, ou le réglage du volume. En combinant cette balise avec des fichiers vidéo au format compatible (par exemple, MP4, WebM ou Ogg), les développeurs peuvent personnaliser l'apparence et le comportement du lecteur via CSS et JavaScript, offrant ainsi une expérience utilisateur fluide et intégrée au design du site.</p>
+            </div>
+            <div class="exemplepart" id="n1">
+                <video class="custom-video" controls>
+                    <source src="ressources/rr.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <div class="exemplepart cssgrid" >
+                <div class="pred"></div>
+                <div class="pgreen"></div>
+                <div class="pyellow"></div>
+                <div class="pblue"></div>
+                <div class="pblack"></div>
+                
+            </div>
+            <div class="textepart">
+                <h2>CSS grid</h2>
+                <p>CSS Grid Layout est un puissant système de mise en page bidimensionnelle qui permet de créer des grilles organisées en lignes et colonnes. Contrairement à Flexbox, qui gère principalement une seule dimension à la fois (ligne ou colonne), Grid est conçu pour contrôler les deux.</p>
+                <div style="display: flex; flex-direction: row; gap: 14px;">
+                    <button id="change_grid" class="b1">change position</button>
+                    <button id="reset" class="b1">reset</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="textepart">
+                <h2>Tableaux</h2>
+                <p>
+                    Les tableaux en HTML sont utilisés pour organiser et afficher des données sous forme de lignes et de colonnes, facilitant ainsi la lecture et la comparaison des informations. Un tableau HTML est défini à l’aide de la balise table, et il se compose de plusieurs éléments : les en-têtes de colonnes avec la balise th, les lignes de données avec tr, et les cellules contenant les données avec td. Grâce à cette structure simple, les tableaux permettent d'afficher de manière claire et structurée des informations telles que des rapports, des plannings ou des statistiques.</p>
+            </div>
+            <div class="exemplepart" style="display: flex; justify-content: center; align-items: center;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Âge</th>
+                            <th>Ville</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alice</td>
+                            <td>25</td>
+                            <td>Paris</td>
+                        </tr>
+                        <tr>
+                            <td>Bob</td>
+                            <td>30</td>
+                            <td>Lyon</td>
+                        </tr>
+                        <tr>
+                            <td>M. Josse</td>
+                            <td>62</td>
+                            <td>Paris</td>
+                        </tr>
+                        <tr>
+                            <td>Bobi</td>
+                            <td>52</td>
+                            <td>Bordeaux</td>
+                        </tr>
+                        <tr>
+                            <td>Patrick</td>
+                            <td>99</td>
+                            <td>NY</td>
+                        </tr>
+                        <tr>
+                            <td>Margot</td>
+                            <td>18</td>
+                            <td>Clamecy</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="exemplepart" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.51608150802!2d2.342490376415497!3d48.84790957133082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671c2b0842b6b%3A0x85a2688c5a2d0790!2sLyc%C3%A9e%20Louis-le-Grand!5e1!3m2!1sfr!2sfr!4v1733064968914!5m2!1sfr!2sfr" width="600" height="450" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
+            <div class="textepart">
+                <h2>Carte Intégrée</h2>
+                <p>Il est possible d'intégrer des cartes interactives dans un site web, ce qui permet d'afficher des lieux géographiques, des itinéraires ou des points d'intérêt de manière visuelle et dynamique. L'une des solutions les plus populaires pour cela est l'utilisation d'API comme Google Maps ou Leaflet, qui offrent des outils puissants pour afficher des cartes personnalisées. Ces cartes peuvent être intégrées directement dans le code HTML, avec la possibilité de marquer des emplacements spécifiques, d'ajouter des informations interactives et même d'ajuster le style de la carte pour l'adapter à l'esthétique du site.</p>
+            </div>
+        </section>
+        <section>
+            <div class="exemplepart flexpart" >
+                <div class="fred"></div>
+                <div class="fgreen"></div>
+                <div class="fyellow"></div>
+                <div class="fblue"></div>
+                <div class="fblack"></div>
+            </div>
+            <div class="textepart">
+                
+            </div>
+        </section>
+        
+
+    </div>
+    
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

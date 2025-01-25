@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.counter{
+    background-color: rgb(0, 0, 0);
+    width: 420px;
+    box-shadow: rgba(0, 0, 0, .1);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    
+}
+.clock{
+    margin: auto;
+    font-size: 50px;
+
+}
+.clock.moins_{
+    color: rgb(249, 93, 93);
+}
+.clock.plus_{
+    color: rgb(62, 202, 62);
+}
+.buttons{
+    margin: auto;
+
+}
+button{
+    width: 50px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    transition: transform 0.5s;
+}
+.moins{
+    background-color: rgb(249, 93, 93);
+}
+
+.plus{
+    background-color: rgb(62, 202, 62);
+}
+button:hover{
+    transform: scale(1.10);
+    
+}
