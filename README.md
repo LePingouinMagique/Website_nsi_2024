@@ -10,3 +10,7 @@ code . (ouvrir avec vs)
 git status (le statu modification et création)
 
 git add .\README.md (pour mettre a jour un fichier en particulier)  => . pour tout
+
+git commit -m 'message'
+
+git push
